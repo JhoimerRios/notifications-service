@@ -1,14 +1,15 @@
 package com.example.notifications_service.client;
 
-import com.example.notifications_service.dto.CustomPageDto;
-import com.example.notifications_service.dto.ProductDto;
-import lombok.RequiredArgsConstructor;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
+
+import com.example.notifications_service.dto.CustomPageDto;
+import com.example.notifications_service.dto.ProductDto;
+
+import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
-import org.springframework.data.domain.Page;
-import org.springframework.core.ParameterizedTypeReference;
 
 @Component
 @RequiredArgsConstructor
